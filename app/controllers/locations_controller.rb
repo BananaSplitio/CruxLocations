@@ -1,6 +1,8 @@
 class LocationsController < ApplicationController
   before_action :set_location, only: [:show, :edit, :update, :destroy]
-  http_basic_authenticate_with name: "admin", password: "admin"
+  unless Rails.env.test?
+    http_basic_authenticate_with name: "admin", password: "admin"
+  end
 
 
 
@@ -55,7 +57,7 @@ class LocationsController < ApplicationController
   def destroy
     @location.destroy
     respond_to do |format|
-      format.html { redirect_to locations_url, notice: 'Location was successfully destroyed.' }
+      format.html { redirect_to locations_url, notice: 'Location was successfully deleted.' }
     end
   end
 

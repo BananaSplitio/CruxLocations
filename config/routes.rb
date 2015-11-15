@@ -4,11 +4,8 @@ Rails.application.routes.draw do
       resources :locations
     end
   end
-
   root 'locations#index'
   resources :locations
-
-
 resources :locations
- 
+
 end
