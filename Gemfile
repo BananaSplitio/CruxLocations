@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby "2.2.3"
+
 
 gem 'rails', '4.2.4'
 gem 'sass-rails', '~> 5.0'
@@ -13,6 +15,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'minitest'
+  gem 'minitest-reporters'
   gem 'byebug'
   gem 'sqlite3'
 end
@@ -27,4 +31,3 @@ group :production do
   gem 'rails_12factor', '0.0.2'
   gem 'puma'
 end
-

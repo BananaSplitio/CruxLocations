@@ -5,9 +5,9 @@ class Location < ActiveRecord::Base
   minimum_longitude = -180
   maximum_longitude = 180
 
-  validates :name, presence: true, length: { minimum: 6 }
-  validates :description, presence: true, length: { minimum: 6 }
-  validates :address, presence: true, length: { minimum: 6 }
+  validates :name, presence: true, length: { minimum: 6, maximum: 30}
+  validates :description, presence: true, length: { minimum: 6, maximum: 30 }
+  validates :address, presence: true, length: { minimum: 6, maximum: 100 }
   validates :latitude, presence: true
   validates :longitude, presence: true
   validates_numericality_of :latitude, greater_than: minimum_latitude
