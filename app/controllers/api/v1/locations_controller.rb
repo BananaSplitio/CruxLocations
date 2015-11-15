@@ -1,8 +1,9 @@
 module Api
   module V1
     class LocationsController < ApplicationController
-
+unless Rails.env.test?
       before_filter :restrict_access
+    end
       respond_to :json
 
       def index

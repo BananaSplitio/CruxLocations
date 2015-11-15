@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  description: MyString
-  address: MyString
-  latitude: 1.5
-  longitude: 1.5
+  name: Josh's Joint
+  description: Burger Bar
+  address: 10148 109 St NW, Edmonton, AB T5J 1M7
+  latitude: 53.542969
+  longitude: -113.499483
 
 two:
-  name: MyString
-  description: MyString
-  address: MyString
-  latitude: 1.5
-  longitude: 1.5
+  name: Andrew's Coffee Shop
+  description: Coffee Shop
+  address: 8708 - 109 St, Edmonton, AB T6G 1E4
+  latitude: 53.523184
+  longitude: -113.512351
