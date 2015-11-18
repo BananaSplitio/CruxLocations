@@ -8,7 +8,7 @@ unless Rails.env.test?
 
       def index
         @locations = Location.all
-        respond_with @locations
+        respond_with locations: @locations
       end
 
       private

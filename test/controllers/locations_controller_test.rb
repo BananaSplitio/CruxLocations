@@ -11,6 +11,10 @@ class LocationsControllerTest < ActionController::TestCase
     assert_not_nil assigns(:locations)
   end
 
+  test "should show json" do
+    
+  end
+
   test "should get new" do
     get :new
     assert_response :success
